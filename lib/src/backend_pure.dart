@@ -18,7 +18,7 @@ BigInt _mod(BigInt x) {
 BigInt _fromLE(Uint8List b) {
   BigInt x = BigInt.zero;
   for (int i = b.length - 1; i >= 0; i--) {
-    x = (x << BigInt.from(8)) | BigInt.from(b[i]);
+    x = (x << 8) | BigInt.from(b[i]);
   }
   return x;
 }
@@ -77,21 +77,21 @@ Uint8List _x448(Uint8List scalar, Uint8List uBytes) {
     }
     swap = bit;
 
-    final A  = _mod(x2 + z2);
-    final B  = _mod(x2 - z2);
-    final AA = _mod(A * A);
-    final BB = _mod(B * B);
-    final E  = _mod(AA - BB);
+    final a  = _mod(x2 + z2);
+    final b  = _mod(x2 - z2);
+    final aa = _mod(a * a);
+    final bb = _mod(b * b);
+    final e  = _mod(aa - bb);
 
-    final C  = _mod(x3 + z3);
-    final D  = _mod(x3 - z3);
-    final DA = _mod(D * A);
-    final CB = _mod(C * B);
+    final c  = _mod(x3 + z3);
+    final d  = _mod(x3 - z3);
+    final da = _mod(d * a);
+    final cb = _mod(c * b);
 
-    x3 = _mod((DA + CB) * (DA + CB));
-    z3 = _mod(_mod(x1) * (DA - CB) * (DA - CB));
-    x2 = _mod(AA * BB);
-    z2 = _mod(E * (_mod(BB + (BigInt.from(_a24) * E))));
+    x3 = _mod((da + cb) * (da + cb));
+    z3 = _mod(_mod(x1) * (da - cb) * (da - cb));
+    x2 = _mod(aa * bb);
+    z2 = _mod(e * (_mod(bb + (BigInt.from(_a24) * e))));
   }
 
   if (swap == 1) {
@@ -106,7 +106,9 @@ Uint8List _x448(Uint8List scalar, Uint8List uBytes) {
 
 bool _isAllZero(Uint8List b) {
   int acc = 0;
-  for (var v in b) acc |= v;
+  for (var v in b) {
+    acc |= v;
+  }
   return acc == 0;
 }
 
