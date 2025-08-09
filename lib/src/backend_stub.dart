@@ -1,7 +1,6 @@
 import 'dart:typed_data';
 
-/// These stubs deliberately throw. We'll replace them with a pure Dart backend.
-Future<Never> backendGenerate() async =>
+Future<Uint8List> backendGeneratePrivateKey() async =>
     throw UnimplementedError('X448 backend not implemented yet.');
 
 Uint8List backendPublicKey(Uint8List privateKey) =>
