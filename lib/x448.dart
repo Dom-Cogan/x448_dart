@@ -8,7 +8,7 @@ import 'src/backend_pure.dart';
 /// 56-byte little-endian scalars and u-coordinates.
 class X448KeyPair {
   final Uint8List privateKey; // 56 bytes
-  final Uint8List publicKey; // 56 bytes
+  final Uint8List publicKey;  // 56 bytes
   const X448KeyPair(this.privateKey, this.publicKey);
 }
 

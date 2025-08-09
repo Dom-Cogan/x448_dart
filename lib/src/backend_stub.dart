@@ -11,4 +11,3 @@ Uint8List backendSharedSecret({
   required Uint8List peerPublicKey,
 }) =>
     throw UnimplementedError('X448 backend not implemented yet.');
-
