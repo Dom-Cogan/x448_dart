@@ -1,7 +1,9 @@
 import 'dart:typed_data';
 
 void zeroize(Uint8List b) {
-  for (var i = 0; i < b.length; i++) b[i] = 0;
+  for (var i = 0; i < b.length; i++) {
+    b[i] = 0;
+  }
 }
 
 T withSharedSecret<T>({
