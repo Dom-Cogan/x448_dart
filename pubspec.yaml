@@ -1,6 +1,6 @@
 name: x448_dart
 description: X448 (RFC 7748) Elliptic-Curve Diffie–Hellman for Dart/Flutter with FlutterFlow-friendly base64 helpers.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/Dom-Cogan/x448_dart
 issue_tracker: https://github.com/Dom-Cogan/x448_dart/issues
 homepage: https://pub.dev/packages/x448_dart
