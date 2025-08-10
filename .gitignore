@@ -22,7 +22,7 @@ doc/api/
 .flutter-plugins
 .flutter-plugins-dependencies
 
-# Emscripten build cache
+# Emscripten / third_party build caches
 emsdk/
 third_party/*/build*/
 third_party/*/out*/
@@ -38,16 +38,20 @@ third_party/*/out*/
 *.s
 *.tmp
 
-# Ignore macOS temporary files
+# macOS temp files
 .DS_Store
 
-# Keep native binaries in repo for mobile/web builds
-!android/src/main/jniLibs/**/*.so
-!ios/**/libx448dart.a
-!web/**/*.wasm
 # Android NDK cache (do not commit)
 .ndk/
 .ndk/**
 
-# Emscripten SDK cache (do not commit)
-emsdk/
+# ---------- Keep required runtime binaries (un-ignore) ----------
+# Mobile: ship prebuilt .so
+!android/src/main/jniLibs/**/*.so
+
+# iOS: vendored static lib
+!ios/**/libx448dart.a
+
+# Web: WASM + loader JS must be in the package
+!web/x448_wasm_bg.wasm
+!web/x448_wasm.js
