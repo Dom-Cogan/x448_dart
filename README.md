@@ -1,45 +1,51 @@
 # x448_dart
 
-X448 (RFC 7748) Elliptic-Curve Diffie–Hellman for Dart & Flutter.  
-Secure key generation, public key derivation, and shared secret computation, with FlutterFlow-friendly base64 helpers.
+Cross‑platform X448 (RFC 7748) Elliptic‑Curve Diffie–Hellman for Dart, Flutter, and FlutterFlow.
 
-**Status:** ✅ Pure Dart backend implemented, RFC 7748-compliant, with full test coverage.
-
----
+This package provides secure key generation, public key derivation, and shared
+secret computation with optional HKDF‑SHA512 and memory zeroization
+utilities. Constant‑time implementations are supplied via FFI
+(OpenSSL/BoringSSL) and WebAssembly, with a pure Dart fallback for platforms
+where a constant‑time backend is unavailable.
 
 ## Features
-- **Pure Dart X448 ECDH** — no native dependencies, works everywhere Dart runs
-- **RFC 7748 §5.2 test vectors** included
-- **HKDF-SHA512** helpers for key derivation (binary + base64)
-- Works with **Flutter**, **FlutterFlow**, and **Dart CLI**
+
+- ✈️ **Cross‑platform**: Android, iOS, macOS, Windows, Linux, Web, and
+  Dart CLI
+- 🔒 **Constant‑time** backends with optional enforcement via
+  `X448.requireConstantTime`
+- 🧪 **RFC 7748 test vectors** included
+- 🔍 **HKDF‑SHA512** helper (`hkdfSha512`) and FlutterFlow‑friendly
+  Base64 wrappers
+- 🗑️ **Zeroization helpers** (`zeroize`, `withSharedSecret`) to
+  wipe secrets from memory
 
 ## Security
-- **Constant-time backends** via OpenSSL/BoringSSL (FFI) or WebAssembly. To enforce CT, set `X448.requireConstantTime = true;` before calling APIs. If a CT backend isn’t available on this platform, calls will throw `StateError`.
-- **Fallback** pure Dart backend is **not** constant-time and is used only when CT is not required.
-- **Zeroization helpers** `zeroize()` and `withSharedSecret()` allow wiping secrets after use.
+
+Set `X448.requireConstantTime = true;` before calling APIs to require a
+constant‑time backend. If none is available, the methods throw `StateError`.
+Without this flag the library falls back to a pure Dart implementation that is
+*not* constant‑time.
 
 ### Platform matrix
+
 | Platform | Backend | Constant-time |
 |---------|---------|---------------|
-| Android / iOS | FFI (BoringSSL) | Yes |
-| macOS / Windows / Linux | FFI (OpenSSL) | Yes |
-| Web | WASM | Yes |
-| Dart VM fallback | Pure Dart | No |
+| Android / iOS | FFI (BoringSSL) | ✅ |
+| macOS / Windows / Linux | FFI (OpenSSL) | ✅ |
+| Web | WebAssembly | ✅ |
+| Dart VM fallback | Pure Dart | ❌ |
 
----
-
-## Example
+## Usage
 
 ```dart
 import 'dart:convert';
 import 'package:x448_dart/x448.dart';
 
 Future<void> main() async {
-  // Generate key pairs for Alice and Bob
   final alice = await X448.generate();
   final bob   = await X448.generate();
 
-  // Each derives the same shared secret
   final s1 = X448.sharedSecret(
     privateKey: alice.privateKey,
     peerPublicKey: bob.publicKey,
@@ -51,3 +57,14 @@ Future<void> main() async {
 
   print('Equal? ${base64Encode(s1) == base64Encode(s2)}'); // true
 }
+```
+
+## FlutterFlow helpers
+
+`flutterflow_x448.dart` and `flutterflow_hkdf.dart` expose Base64‑friendly
+wrappers for FlutterFlow custom actions.
+
+## License
+
+[MIT](LICENSE)
+
