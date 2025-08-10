@@ -59,7 +59,7 @@ void main() {
         '05' + '00' * 55
       );
       final u0 = dehex(
-        '00' * 56
+        '05' + '00' * 55
       );
 
       // one iteration: new_k = X448(k0, u0)
