@@ -55,3 +55,6 @@ third_party/*/out*/
 # Web: WASM + loader JS must be in the package
 !web/x448_wasm_bg.wasm
 !web/x448_wasm.js
+
+# Local Android build outputs (do not commit)
+build-android/
