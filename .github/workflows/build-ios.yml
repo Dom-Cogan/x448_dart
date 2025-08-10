@@ -1,4 +1,3 @@
-tee .github/workflows/build-ios.yml >/dev/null <<'EOF'
 name: Build iOS x448 static lib
 
 on:
