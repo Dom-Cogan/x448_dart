@@ -1,0 +1,5 @@
+#ifndef FLUTTER_PLUGIN_X448_DART_PLUGIN_H_
+#define FLUTTER_PLUGIN_X448_DART_PLUGIN_H_
+#include <flutter/plugin_registrar_windows.h>
+void X448DartPluginRegisterWithRegistrar(FlutterDesktopPluginRegistrar* registrar);
+#endif

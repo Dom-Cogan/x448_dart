@@ -1,0 +1,2 @@
+/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar qc libx448.a CMakeFiles/x448.dir/src/arch_32/f_impl.c.o CMakeFiles/x448.dir/src/curve448.c.o CMakeFiles/x448.dir/src/curve448_tables.c.o CMakeFiles/x448.dir/src/f_generic.c.o CMakeFiles/x448.dir/src/scalar.c.o CMakeFiles/x448.dir/src/curve25519.c.o
+/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib libx448.a

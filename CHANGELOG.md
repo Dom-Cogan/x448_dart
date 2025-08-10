@@ -5,3 +5,8 @@
 
 ## 0.1.1
 - Updated README to reflect completed pure Dart backend.
+
+## 0.2.0
+- Converted package to Flutter plugin with FFI/WASM backends.
+- Added constant-time enforcement and zeroization helpers.
+- Added placeholder native libraries and web assets.

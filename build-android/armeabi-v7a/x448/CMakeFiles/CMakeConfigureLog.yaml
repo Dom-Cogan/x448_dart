@@ -1,0 +1,404 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Android - 1 - armv7-a
+      The host system is: Linux - 6.8.0-1030-azure - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang 
+      Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-march=armv7-a;-mthumb;-Wformat;-Werror=format-security
+      Id flags: -c;--target=armv7-none-linux-androideabi21 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is Clang, found in:
+        /workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ 
+      Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-march=armv7-a;-mthumb;-Wformat;-Werror=format-security
+      Id flags: -c;--target=armv7-none-linux-androideabi21 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is Clang, found in:
+        /workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-Wj233S"
+      binary: "/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-Wj233S"
+    cmakeVariables:
+      ANDROID_ABI: "armeabi-v7a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "TRUE"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "armv7-none-linux-androideabi21"
+      CMAKE_C_COMPILER_TARGET: "armv7-none-linux-androideabi21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-Wj233S'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bd992/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bd992.dir/build.make CMakeFiles/cmTC_bd992.dir/build
+        gmake[1]: Entering directory '/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-Wj233S'
+        Building C object CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o
+        /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi21 --sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+        Target: armv7-none-linux-android21
+        Thread model: posix
+        InstalledDir: /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin
+         (in-process)
+         "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple thumbv7-none-linux-android21 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=1 -target-cpu generic -target-feature +soft-float-abi -target-feature +vfp2 -target-feature +vfp2sp -target-feature +vfp3 -target-feature +vfp3d16 -target-feature +vfp3d16sp -target-feature +vfp3sp -target-feature -fp16 -target-feature -vfp4 -target-feature -vfp4d16 -target-feature -vfp4d16sp -target-feature -vfp4sp -target-feature -fp-armv8 -target-feature -fp-armv8d16 -target-feature -fp-armv8d16sp -target-feature -fp-armv8sp -target-feature -fullfp16 -target-feature +fp64 -target-feature +d32 -target-feature +neon -target-feature -sha2 -target-feature -aes -target-feature -fp16fml -target-abi aapcs-linux -mfloat-abi soft -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-Wj233S -resource-dir /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi -internal-externc-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-Wj233S -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
+        ignoring nonexistent directory "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include
+         /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi
+         /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+        End of search list.
+        Linking C executable cmTC_bd992
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd992.dir/link.txt --verbose=1
+        /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi21 --sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o -o cmTC_bd992 
+        Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+        Target: armv7-none-linux-android21
+        Thread model: posix
+        InstalledDir: /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin
+         "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL -z now -z relro -z max-page-size=4096 -X --hash-style=both --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_bd992 /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtbegin_dynamic.o -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21 -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl -lc /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtend_android.o
+        gmake[1]: Leaving directory '/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-Wj233S'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+          add: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi]
+          add: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+        collapse include dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi]
+        collapse include dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        implicit include dirs: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-Wj233S']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bd992/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_bd992.dir/build.make CMakeFiles/cmTC_bd992.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-Wj233S']
+        ignore line: [Building C object CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi21 --sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
+        ignore line: [Target: armv7-none-linux-android21]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple thumbv7-none-linux-android21 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=1 -target-cpu generic -target-feature +soft-float-abi -target-feature +vfp2 -target-feature +vfp2sp -target-feature +vfp3 -target-feature +vfp3d16 -target-feature +vfp3d16sp -target-feature +vfp3sp -target-feature -fp16 -target-feature -vfp4 -target-feature -vfp4d16 -target-feature -vfp4d16sp -target-feature -vfp4sp -target-feature -fp-armv8 -target-feature -fp-armv8d16 -target-feature -fp-armv8d16sp -target-feature -fp-armv8sp -target-feature -fullfp16 -target-feature +fp64 -target-feature +d32 -target-feature +neon -target-feature -sha2 -target-feature -aes -target-feature -fp16fml -target-abi aapcs-linux -mfloat-abi soft -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-Wj233S -resource-dir /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi -internal-externc-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-Wj233S -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+        ignore line: [ /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi]
+        ignore line: [ /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_bd992]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd992.dir/link.txt --verbose=1]
+        ignore line: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi21 --sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat   -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o -o cmTC_bd992 ]
+        ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
+        ignore line: [Target: armv7-none-linux-android21]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        link line: [ "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL -z now -z relro -z max-page-size=4096 -X --hash-style=both --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_bd992 /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtbegin_dynamic.o -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21 -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl -lc /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtend_android.o]
+          arg [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
+          arg [--sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-zmax-page-size=4096] ==> ignore
+          arg [-X] ==> ignore
+          arg [--hash-style=both] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/system/bin/linker] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_bd992] ==> ignore
+          arg [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtbegin_dynamic.o] ==> obj [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtbegin_dynamic.o]
+          arg [-L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm] ==> dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm]
+          arg [-L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21] ==> dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21]
+          arg [-L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi] ==> dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi]
+          arg [-L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib] ==> dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib]
+          arg [-L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+          arg [--build-id=sha1] ==> ignore
+          arg [--no-rosegment] ==> ignore
+          arg [--no-undefined-version] ==> ignore
+          arg [--fatal-warnings] ==> ignore
+          arg [--no-undefined] ==> ignore
+          arg [CMakeFiles/cmTC_bd992.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a] ==> lib [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [-lc] ==> lib [c]
+          arg [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a] ==> lib [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtend_android.o] ==> obj [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtend_android.o]
+        remove lib [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a]
+        remove lib [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a]
+        collapse library dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm]
+        collapse library dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21]
+        collapse library dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi]
+        collapse library dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        collapse library dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit libs: [-l:libunwind.a;dl;c;-l:libunwind.a;dl]
+        implicit objs: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtbegin_dynamic.o;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtend_android.o]
+        implicit dirs: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-V8qBrL"
+      binary: "/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-V8qBrL"
+    cmakeVariables:
+      ANDROID_ABI: "armeabi-v7a"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "TRUE"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_COMPILER_TARGET: "armv7-none-linux-androideabi21"
+      CMAKE_CXX_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat  "
+      CMAKE_C_COMPILER_TARGET: "armv7-none-linux-androideabi21"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-V8qBrL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_005f2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_005f2.dir/build.make CMakeFiles/cmTC_005f2.dir/build
+        gmake[1]: Entering directory '/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-V8qBrL'
+        Building CXX object CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o
+        /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+        Target: armv7-none-linux-android21
+        Thread model: posix
+        InstalledDir: /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin
+         (in-process)
+         "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple thumbv7-none-linux-android21 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=1 -target-cpu generic -target-feature +soft-float-abi -target-feature +vfp2 -target-feature +vfp2sp -target-feature +vfp3 -target-feature +vfp3d16 -target-feature +vfp3d16sp -target-feature +vfp3sp -target-feature -fp16 -target-feature -vfp4 -target-feature -vfp4d16 -target-feature -vfp4d16sp -target-feature -vfp4sp -target-feature -fp-armv8 -target-feature -fp-armv8d16 -target-feature -fp-armv8d16sp -target-feature -fp-armv8sp -target-feature -fullfp16 -target-feature +fp64 -target-feature +d32 -target-feature +neon -target-feature -sha2 -target-feature -aes -target-feature -fp16fml -target-abi aapcs-linux -mfloat-abi soft -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-V8qBrL -resource-dir /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi -internal-externc-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir=/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-V8qBrL -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
+        ignoring nonexistent directory "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1
+         /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include
+         /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi
+         /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+        End of search list.
+        Linking CXX executable cmTC_005f2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_005f2.dir/link.txt --verbose=1
+        /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_005f2 
+        Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+        Target: armv7-none-linux-android21
+        Thread model: posix
+        InstalledDir: /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin
+         "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL -z now -z relro -z max-page-size=4096 -X --hash-style=both --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_005f2 /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtbegin_dynamic.o -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21 -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl -lc /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtend_android.o
+        gmake[1]: Leaving directory '/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-V8qBrL'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+          add: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+          add: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi]
+          add: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+        collapse include dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+        collapse include dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi]
+        collapse include dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        implicit include dirs: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-V8qBrL']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_005f2/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_005f2.dir/build.make CMakeFiles/cmTC_005f2.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-V8qBrL']
+        ignore line: [Building CXX object CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
+        ignore line: [Target: armv7-none-linux-android21]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple thumbv7-none-linux-android21 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=1 -target-cpu generic -target-feature +soft-float-abi -target-feature +vfp2 -target-feature +vfp2sp -target-feature +vfp3 -target-feature +vfp3d16 -target-feature +vfp3d16sp -target-feature +vfp3sp -target-feature -fp16 -target-feature -vfp4 -target-feature -vfp4d16 -target-feature -vfp4d16sp -target-feature -vfp4sp -target-feature -fp-armv8 -target-feature -fp-armv8d16 -target-feature -fp-armv8d16sp -target-feature -fp-armv8sp -target-feature -fullfp16 -target-feature +fp64 -target-feature +d32 -target-feature +neon -target-feature -sha2 -target-feature -aes -target-feature -fp16fml -target-abi aapcs-linux -mfloat-abi soft -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-V8qBrL -resource-dir /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi -internal-externc-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir=/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/CMakeScratch/TryCompile-V8qBrL -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+        ignore line: [ /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+        ignore line: [ /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/arm-linux-androideabi]
+        ignore line: [ /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_005f2]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_005f2.dir/link.txt --verbose=1]
+        ignore line: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat    -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --no-undefined-version -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_005f2 ]
+        ignore line: [Android (11349228  +pgo  +bolt  +lto  -mlgo  based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
+        ignore line: [Target: armv7-none-linux-android21]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        link line: [ "/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -EL -z now -z relro -z max-page-size=4096 -X --hash-style=both --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_005f2 /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtbegin_dynamic.o -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21 -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib -L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl -lc /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a -l:libunwind.a -ldl /workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtend_android.o]
+          arg [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
+          arg [--sysroot=/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-zmax-page-size=4096] ==> ignore
+          arg [-X] ==> ignore
+          arg [--hash-style=both] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/system/bin/linker] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_005f2] ==> ignore
+          arg [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtbegin_dynamic.o] ==> obj [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtbegin_dynamic.o]
+          arg [-L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm] ==> dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm]
+          arg [-L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21] ==> dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21]
+          arg [-L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi] ==> dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi]
+          arg [-L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib] ==> dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib]
+          arg [-L/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+          arg [--build-id=sha1] ==> ignore
+          arg [--no-rosegment] ==> ignore
+          arg [--no-undefined-version] ==> ignore
+          arg [--fatal-warnings] ==> ignore
+          arg [--no-undefined] ==> ignore
+          arg [CMakeFiles/cmTC_005f2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-Bstatic] ==> search static
+          arg [-lc++] ==> lib [c++]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-lm] ==> lib [m]
+          arg [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a] ==> lib [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [-lc] ==> lib [c]
+          arg [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a] ==> lib [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtend_android.o] ==> obj [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtend_android.o]
+        remove lib [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a]
+        remove lib [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-arm-android.a]
+        collapse library dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm]
+        collapse library dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21]
+        collapse library dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi]
+        collapse library dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/../lib] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        collapse library dir [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit libs: [c++;m;-l:libunwind.a;dl;c;-l:libunwind.a;dl]
+        implicit objs: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtbegin_dynamic.o;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21/crtend_android.o]
+        implicit dirs: [/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/arm;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/21;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi;/workspaces/x448_dart/.ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+...

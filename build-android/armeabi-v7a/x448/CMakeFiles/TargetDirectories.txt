@@ -1,0 +1,7 @@
+/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/x448.dir
+/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/edit_cache.dir
+/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/rebuild_cache.dir
+/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/list_install_components.dir
+/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/install.dir
+/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/install/local.dir
+/workspaces/x448_dart/build-android/armeabi-v7a/x448/CMakeFiles/install/strip.dir
