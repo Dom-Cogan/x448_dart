@@ -17,8 +17,8 @@ BigInt _mod(BigInt x) {
 
 BigInt _fromLE(Uint8List b) {
   BigInt x = BigInt.zero;
-  for (int i = b.length - 1; i >= 0; i--) {
-    x = (x << 8) | BigInt.from(b[i]);
+  for (int i = 0; i < b.length; i++) {
+    x |= (BigInt.from(b[i]) << (8 * i));
   }
   return x;
 }
@@ -91,7 +91,7 @@ Uint8List _x448(Uint8List scalar, Uint8List uBytes) {
     x3 = _mod((da + cb) * (da + cb));
     z3 = _mod(_mod(x1) * (da - cb) * (da - cb));
     x2 = _mod(aa * bb);
-    z2 = _mod(e * (_mod(bb + (BigInt.from(_a24) * e))));
+    z2 = _mod(e * (_mod(aa + (BigInt.from(_a24) * e))));
   }
 
   if (swap == 1) {
