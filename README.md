@@ -13,6 +13,19 @@ Secure key generation, public key derivation, and shared secret computation, wit
 - **HKDF-SHA512** helpers for key derivation (binary + base64)
 - Works with **Flutter**, **FlutterFlow**, and **Dart CLI**
 
+## Security
+- **Constant-time backends** via OpenSSL/BoringSSL (FFI) or WebAssembly. To enforce CT, set `X448.requireConstantTime = true;` before calling APIs. If a CT backend isn’t available on this platform, calls will throw `StateError`.
+- **Fallback** pure Dart backend is **not** constant-time and is used only when CT is not required.
+- **Zeroization helpers** `zeroize()` and `withSharedSecret()` allow wiping secrets after use.
+
+### Platform matrix
+| Platform | Backend | Constant-time |
+|---------|---------|---------------|
+| Android / iOS | FFI (BoringSSL) | Yes |
+| macOS / Windows / Linux | FFI (OpenSSL) | Yes |
+| Web | WASM | Yes |
+| Dart VM fallback | Pure Dart | No |
+
 ---
 
 ## Example

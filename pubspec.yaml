@@ -1,12 +1,13 @@
 name: x448_dart
-description: X448 (RFC 7748) Elliptic-Curve Diffie–Hellman for Dart/Flutter with FlutterFlow-friendly base64 helpers.
-version: 0.1.1
+description: X448 (RFC 7748) Elliptic-Curve Diffie-Hellman for Dart/Flutter with FlutterFlow-friendly base64 helpers.
+version: 0.2.0
 repository: https://github.com/Dom-Cogan/x448_dart
 issue_tracker: https://github.com/Dom-Cogan/x448_dart/issues
 homepage: https://pub.dev/packages/x448_dart
 
 environment:
   sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
 
 platforms:
   android:
@@ -19,7 +20,27 @@ platforms:
 dependencies:
   meta: ^1.11.0
   crypto: ^3.0.3
+  ffi: ^2.1.0
 
 dev_dependencies:
   lints: ^3.0.0
   test: ^1.25.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: dev.domcogan.x448_dart
+        pluginClass: X448DartPlugin
+      ios:
+        pluginClass: X448DartPlugin
+      linux:
+        pluginClass: X448DartPlugin
+      macos:
+        pluginClass: X448DartPlugin
+      windows:
+        pluginClass: X448DartPlugin
+
+flutter_assets:
+  - web/x448_wasm_bg.wasm
+  - web/x448_wasm.js
