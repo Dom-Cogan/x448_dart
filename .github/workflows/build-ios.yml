@@ -1,3 +1,4 @@
+tee .github/workflows/build-ios.yml >/dev/null <<'EOF'
 name: Build iOS x448 static lib
 
 on:
@@ -8,13 +9,16 @@ jobs:
     runs-on: macos-14
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
 
       - name: Build libx448dart.a (arm64)
         run: |
           set -e
           SDK=$(xcrun --sdk iphoneos --show-sdk-path)
           mkdir -p build-ios
-          # Build static x448
+          # Build static x448 from submodule
           cmake -S third_party/x448 -B build-ios/x448 \
             -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_SYSTEM_NAME=iOS \
@@ -25,7 +29,7 @@ jobs:
           cmake --build build-ios/x448 --config Release -j
           # Build wrapper and merge
           clang -c -arch arm64 -isysroot "$SDK" -miphoneos-version-min=11.0 \
-            -Ithird_party/x448/include third_party/x448/mobile_wrapper.c -o build-ios/wrapper.o
+            -Ithird_party/x448/include native/mobile_wrapper.c -o build-ios/wrapper.o
           libtool -static -o build-ios/libx448dart.a build-ios/x448/libx448.a build-ios/wrapper.o
 
       - name: Upload artifact
